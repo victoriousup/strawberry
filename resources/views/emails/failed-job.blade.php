@@ -1,0 +1,1 @@
+A job has failed: {{ $job }}

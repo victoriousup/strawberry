@@ -1,0 +1,130 @@
+h2
+{
+	text-align: center;
+}
+
+h2 .icon
+{
+	margin: 0 20px 0 20px;
+}
+
+.calendar
+{
+	margin: 1px 0 0 1px;
+}
+
+.date
+{
+	display: inline-block;
+	width: calc(100% / 7);
+	float: left;
+	border: 1px solid #cfcfcf;
+	margin: -1px 0 0 -1px;
+	position: relative;
+	overflow: hidden;
+}
+
+.date:after
+{
+	content:'';
+	display: block;
+	margin-top: 100%;
+}
+
+.date .inner
+{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.date .inner .overlay
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.50);
+	display: none;
+	z-index: 999999;
+	text-align: center;
+}
+
+.date .inner .overlay a
+{
+	margin-top: 10px;
+	width: auto;
+}
+
+.date .inner .overlay p
+{
+	width: 100%;
+	background-color: rgba(255, 255, 255, 0.9);
+	margin-top: 10px;
+}
+
+.date .inner:hover .overlay
+{
+	display: block;
+}
+
+.date .inner .overlay-select
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	z-index: 999999;
+}
+
+.date .inner .image
+{
+	width: 100%;
+	height: 100%;
+}
+
+.date .day
+{
+	position: absolute;
+	top: 5px;
+	right: 8px;
+	font-weight: bold;
+	background-color: #FFFFFF;
+	border-radius: 4px;
+	padding: 0 3px 0 3px;
+}
+
+
+#packs
+{
+	margin-left: -15px;
+	margin-top: 25px;
+}
+
+.pack
+{
+	margin: 0 0 15px 15px;
+	width: 200px;
+	float: left;
+	text-align: center;
+	position: relative;
+}
+
+.pack img
+{
+	width: 200px;
+	height: 200px;
+	margin-bottom: 8px;
+}
+
+.pack .label
+{
+	position: absolute;
+	top: -5px;
+	left: -5px;
+}
